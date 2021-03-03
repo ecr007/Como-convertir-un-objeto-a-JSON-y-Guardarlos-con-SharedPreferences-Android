@@ -2,7 +2,7 @@
 
 ## Guardar
 
-```
+```java
 SharedPreferences  mPrefs = getPreferences("Key",MODE_PRIVATE);
 
 - To save:
@@ -19,4 +19,10 @@ Gson gson = new Gson();
 String json = mPrefs.getString("MyObject", "");
 MyObject obj = gson.fromJson(json, MyObject.class);
 
+```
+
+## La clase debe implementar la interface
+
+```java
+implements Serializable
 ```
